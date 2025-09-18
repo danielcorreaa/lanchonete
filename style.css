@@ -1,0 +1,59 @@
+/* Custom CSS para Lanche Hoje, Amanhã e Sempre */
+
+/* Estilos para a fonte do título */
+.font-luckiest {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+/* Estilos para a fonte do corpo do texto */
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Esconde todas as telas por padrão */
+.screen-container {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animação de fade-in para a transição de telas */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo para cartões de produtos */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o botão do carrinho quando houver itens */
+#cart-button.has-items {
+    animation: pulse-ring 1s infinite;
+}
+
+@keyframes pulse-ring {
+    0% {
+        box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+}
+
+/* Máscara de CPF */
+/* Estilo para garantir que o campo de CPF não mude de largura com a máscara */
+#find-cpf, #register-cpf {
+    min-width: 150px;
+}
