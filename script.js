@@ -1,5 +1,5 @@
 // Constantes de API
-const BASE_URL = 'http://localhost:8082'
+const BASE_URL = 'https://tech-challenge-v3.onrender.com'
 const API_BASE_CUSTOMER = BASE_URL + '/api/v1/customers/';
 const API_BASE_PRODUCT =  BASE_URL +'/api/v1/products/';
 const API_BASE_ORDER =  BASE_URL +'/api/v1/orders/';
